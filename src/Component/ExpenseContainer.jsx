@@ -11,7 +11,7 @@ function ExpenseContainer() {
   // Add expense (and update state)
   async function addExpense(title, amount) { 
     try {
-      const response = await fetch("http://localhost:5555/post", {
+      const response = await fetch("https://expensetrackerbackend-le65.onrender.com/post", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
