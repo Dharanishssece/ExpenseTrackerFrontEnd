@@ -32,7 +32,7 @@ function ExpenseContainer() {
   // Fetch all expenses
 async function getExpense() {
   try {
-    const response = await fetch('http://localhost:5555/get');
+    const response = await fetch('https://expensetrackerbackend-le65.onrender.com/get');
     const data = await response.json();
 
     // ✅ backend sends { message, expenses: [...] }
@@ -46,7 +46,7 @@ async function getExpense() {
   // Delete expense
   async function deleteExpense(id) {
     try {
-      await fetch(`http://localhost:5555/delete/${id}`, {
+      await fetch(`https://expensetrackerbackend-le65.onrender.com/delete/${id}`, {
         method: "DELETE"
       });
       getExpense();
