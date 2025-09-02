@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Form from './form.jsx'
+import Form from './Form.jsx'
 import { v4 as uuid } from 'uuid'
 import History from './History.jsx';
 import BalanceContainer from './BalanceContainer.jsx';
