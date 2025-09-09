@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 function Form(props) {
   const [title, setTitle] = useState("");
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState("");
   
   function handleTitleChange(e) {
     setTitle(e.target.value);
